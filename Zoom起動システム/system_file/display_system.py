@@ -6,7 +6,7 @@ def pd_list_M(pd_data):
 
 def pd_json_C(pd_data):
     json_data = pd_data.to_json(orient='records')  # 'records'は行ごとに辞書として格納
-    with open("./test.json", "w") as f:
+    with open(r"C:\Users\eva10\OneDrive\デスクトップ\創作物一覧\Zoom起動システム\test.json", "w") as f:
         f.write(json_data)
         
 def zoom_kidou(select_name, pd_data):

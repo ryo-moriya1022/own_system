@@ -1,8 +1,13 @@
 import streamlit as st
 from system_file.change_pd import change_pd
 from system_file.display_system import pd_list_M,pd_json_C,zoom_kidou
-
+import webbrowser as wb
 def main():
+    def opens():
+        wb.open("https://google.com/")
+    testbutton=st.button("Open")
+    if testbutton:
+        opens()
     pd_data =change_pd()
     st.title("URL自動実行システム")
     st.write("時刻とURLを設定して自動でサイトを開くシステムです")

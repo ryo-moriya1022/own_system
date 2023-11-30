@@ -1,4 +1,3 @@
 schedule
-webbrowser
 pandas
 time

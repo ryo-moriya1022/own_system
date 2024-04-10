@@ -1,0 +1,21 @@
+{
+    "manifest_version": 3,
+    "name": "reload_system",
+    "description": "Base Level Extension",
+    "version": "1.0",
+    "action": {
+        "default_popup": "popup.html"
+    },
+    "content_security_policy": {
+        "extension_pages": "script-src 'self'; object-src 'self'; script-src-elem 'self' 'unsafe-inline' https://music.yandex.ru/;"
+    },
+    "content_scripts": [
+        {
+            "js":["test.js"],
+            "matches": [
+                "http://100.85.35.80/*"
+            ]
+        }
+    ],
+    "host_permissions": ["https://api-address/"]
+}

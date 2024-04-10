@@ -29,4 +29,4 @@ def time_function(specified_time,week,URL):
     while True:
         timeHolder.write("実行中")
         sc.run_pending()
-        time.sleep(1)  # スケジュールがない場合は1秒待機
+        time.sleep(60)  # スケジュールがない場合は1秒待機
